@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import params from './src/params'
+import Field from './src/components/Field'
 
 export default class App extends Component{
   render() {
     return (
       <View style={styles.container}> 
-        <Text style={styles.welcome}>Iniciando o Mines!</Text>
+        <Text style={styles.welcome}>Iniciando o Mines!!!</Text>
         <Text>Tamanho da grade: {params.getRowsAmount()}x{params.getColumnsAmount()}</Text>
+
+        <Field />
       </View>
     )
   }
@@ -18,7 +21,7 @@ const styles = StyleSheet.create({
     flex:             1,
     justifyContent:   'center',
     alignItems:       'center',
-    backgroundColor:  '#666',
+    /* backgroundColor:  '#666', */
   },
   welcome: {
     fontSize:         20,

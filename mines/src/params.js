@@ -2,7 +2,7 @@ import { Dimensions } from 'react-native'
 
 const params = {
     blockSize:      30,
-    broderSize:     5,
+    borderSize:     5,
     fontSize:       15,
     headerRatio:    0.15, //Proporção do painel superior na tela
     difficultLevel: 0.1,
@@ -16,3 +16,5 @@ const params = {
         return Math.floor(boardHeight / this.blockSize)
     }
 }
+
+export default params
