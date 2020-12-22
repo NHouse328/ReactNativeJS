@@ -15,7 +15,31 @@ import {
 } from './src/functions'
 import Header from './src/components/Header';
 
+/* import admob, { MaxAdContentRating } from '@react-native-firebase/admob';
+import { InterstitialAd, RewardedAd, BannerAd, TestIds } from '@react-native-firebase/admob';
+import { BannerAdSize, } from '@react-native-firebase/admob';
+
+const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-xxxxxxxxxxxxx/yyyyyyyyyyyyyy'; */
+
 export default class App extends Component {
+
+/*   componentDidMount() {
+    admob()
+      .setRequestConfiguration({
+        // Update all future requests suitable for parental guidance
+        maxAdContentRating: MaxAdContentRating.PG,
+
+        // Indicates that you want your content treated as child-directed for purposes of COPPA.
+        tagForChildDirectedTreatment: true,
+
+        // Indicates that you want the ad request to be handled in a
+        // manner suitable for users under the age of consent.
+        tagForUnderAgeOfConsent: true,
+      })
+      .then(() => {
+        // Request config successfully set!
+      });
+  } */
 
   constructor(props) {
     super(props)
@@ -79,15 +103,18 @@ export default class App extends Component {
       <View style={styles.container}>
         <LevelSelection isVisible={this.state.showLevelSelection}
           onLevelSelected={this.onLevelSelected}
-          onCancel = {() => this.setState({ showLevelSelection: false })} />
+          onCancel={() => this.setState({ showLevelSelection: false })} />
         <Header flagsLeft={this.minesAmount() - flagsUsed(this.state.board)}
-          onNewGame={() => this.setState(this.createState())} 
+          onNewGame={() => this.setState(this.createState())}
           onFlagPress={() => this.setState({ showLevelSelection: true })} />
         <View style={styles.board}>
           <MineField board={this.state.board}
-            onOpenField={this.onOpenField} 
-            onSelectField={this.onSelectField}/>
+            onOpenField={this.onOpenField}
+            onSelectField={this.onSelectField} />
         </View>
+        {/* <BannerAd 
+          unitId={adUnitId} 
+          size={BannerAdSize.FULL_BANNER} /> */}
       </View>
     )
   }

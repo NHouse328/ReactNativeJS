@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "54378130032",
+    "project_id": "campo-minado---gc",
+    "storage_bucket": "campo-minado---gc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54378130032:android:18d0c6a5a832c73a6da2b5",
+        "android_client_info": {
+          "package_name": "com.mines"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54378130032-sr20qpvp9ubf1smvf1u799q0bm65ctoc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtF50gAgD6SZ_lCScQ0m3X1K6rzs7Ac8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54378130032-sr20qpvp9ubf1smvf1u799q0bm65ctoc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
