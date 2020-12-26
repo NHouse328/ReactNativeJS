@@ -57,3 +57,6 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+mines/android/gradle.properties
+mines/android/app/google-services.json
