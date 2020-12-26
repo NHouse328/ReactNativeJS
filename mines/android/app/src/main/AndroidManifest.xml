@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.mines">
+  package="casanova.gabriel.mines">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

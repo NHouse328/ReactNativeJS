@@ -1,4 +1,4 @@
-package com.mines;
+package casanova.gabriel.mines;
 
 import android.app.Application;
 import android.content.Context;

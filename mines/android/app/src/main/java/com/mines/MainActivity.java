@@ -1,4 +1,4 @@
-package com.mines;
+package casanova.gabriel.mines;
 
 import com.facebook.react.ReactActivity;
 

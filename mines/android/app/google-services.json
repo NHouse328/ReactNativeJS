@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:54378130032:android:18d0c6a5a832c73a6da2b5",
+        "mobilesdk_app_id": "1:54378130032:android:46b29ee32a02be226da2b5",
         "android_client_info": {
-          "package_name": "com.mines"
+          "package_name": "casanova.gabriel.mines"
         }
       },
       "oauth_client": [
