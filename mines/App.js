@@ -15,15 +15,15 @@ import {
 } from './src/functions'
 import Header from './src/components/Header';
 
-/* import admob, { MaxAdContentRating } from '@react-native-firebase/admob';
+import admob, { MaxAdContentRating } from '@react-native-firebase/admob';
 import { InterstitialAd, RewardedAd, BannerAd, TestIds } from '@react-native-firebase/admob';
 import { BannerAdSize, } from '@react-native-firebase/admob';
 
-const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-xxxxxxxxxxxxx/yyyyyyyyyyyyyy'; */
+const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-7683931401076141/7670840370';
 
 export default class App extends Component {
 
-/*   componentDidMount() {
+  componentDidMount() {
     admob()
       .setRequestConfiguration({
         // Update all future requests suitable for parental guidance
@@ -39,7 +39,7 @@ export default class App extends Component {
       .then(() => {
         // Request config successfully set!
       });
-  } */
+  }
 
   constructor(props) {
     super(props)
@@ -112,9 +112,9 @@ export default class App extends Component {
             onOpenField={this.onOpenField}
             onSelectField={this.onSelectField} />
         </View>
-        {/* <BannerAd 
+        <BannerAd 
           unitId={adUnitId} 
-          size={BannerAdSize.FULL_BANNER} /> */}
+          size={BannerAdSize.FULL_BANNER} />
       </View>
     )
   }
