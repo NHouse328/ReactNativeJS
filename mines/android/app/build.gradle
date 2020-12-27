@@ -130,6 +130,7 @@ android {
     }
 
     defaultConfig {
+        multiDexEnabled true
         applicationId "casanova.gabriel.mines"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
@@ -191,6 +192,9 @@ android {
 }
 
 dependencies {
+    // mult dex quando yaml não cabe em um unico
+    implementation 'com.android.support:multidex:1.0.3' //enter the latest version
+
     // Import the Firebase BoM
     implementation platform('com.google.firebase:firebase-bom:26.2.0')
 
