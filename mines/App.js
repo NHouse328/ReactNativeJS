@@ -18,8 +18,16 @@ import Header from './src/components/Header';
 import admob, { MaxAdContentRating } from '@react-native-firebase/admob';
 import { InterstitialAd, RewardedAd, BannerAd, TestIds } from '@react-native-firebase/admob';
 import { BannerAdSize, } from '@react-native-firebase/admob';
+import { AdEventType } from '@react-native-firebase/admob';
 
+const adUnitId02 = __DEV__ ? TestIds.INTERSTITIAL : 'ca-app-pub-7683931401076141/3512027539';
 const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-7683931401076141/7670840370';
+
+const interstitial = InterstitialAd.createForAdRequest(adUnitId02, {
+  requestNonPersonalizedAdsOnly: true,
+  keywords: ['fashion', 'clothing'],
+});
+
 
 export default class App extends Component {
 
@@ -53,6 +61,7 @@ export default class App extends Component {
   }
 
   createState = () => {
+    interstitial.load();
     const cols = params.getColumnsAmount()
     const rows = params.getRowsAmount()
     return {
@@ -72,6 +81,7 @@ export default class App extends Component {
     if (lost) {
       showMines(board)
       Alert.alert('Perdeu !')
+      interstitial.show();
     }
 
     if (won) {

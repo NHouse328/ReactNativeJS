@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#EEE',
         alignItems: 'center',
         justifyContent: 'space-around',
-        paddingTop: 20,
+        //paddingTop: 20,
         paddingHorizontal: 20,
     },
     flagContainer: {

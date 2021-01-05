@@ -39,8 +39,8 @@ export default props => {
 
 const styles = StyleSheet.create({
     field: {
-        height:             params.blockSize,
-        width:              params.blockSize,
+        height:             params.getBlockSize(),
+        width:              params.getBlockSize(),
         borderWidth:        params.borderSize,
     },
     regular: {
