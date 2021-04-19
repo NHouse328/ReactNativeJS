@@ -25,6 +25,7 @@ export default class TaskList extends Component {
                 </ImageBackground>
                 <View style={styles.taskList}>
                     <Task desc="Teste" estimateAt={new Date()} doneAt={null}></Task>
+                    <Task desc="Teste 2" estimateAt={new Date()} doneAt="done"></Task>
                 </View>
                 
             </View>
